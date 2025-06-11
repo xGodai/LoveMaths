@@ -1,15 +1,51 @@
-function runGame(){}
+// This is the JavaScript for the Math Quiz Game. //
+// It handles the game logic, user interactions, and displays the questions. //
+// Wait For DOM to Load. //
 
-function checkAnswer(){}
+document.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.getElementsByTagName("button");
 
-function calculateCorrectAnswer(){}
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "submit") {
+               alert("You clicked the submit button!"); 
+            } else {
+                let gameType = this.getAttribute("data-type");
+                alert(`You clicked ${gameType}`);
+            }
+        });
+    }
+});
 
-function incrementScore(){}
 
-function incrementWrongAnswer(){}
+function runGame(){
 
-function displayAdditionQuestion(){}
+}
 
-function displaySubtractQuestion(){}
+function checkAnswer(){
 
-function displayMultiplyQuestion(){}
+}
+
+function calculateCorrectAnswer(){
+
+}
+
+function incrementScore(){
+
+}
+
+function incrementWrongAnswer(){
+
+}
+
+function displayAdditionQuestion(){
+
+}
+
+function displaySubtractQuestion(){
+
+}
+
+function displayMultiplyQuestion(){
+
+}
